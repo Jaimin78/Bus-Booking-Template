@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bus Booking</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: 'Baloo Bhai', cursive;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            background-image: url(bg.jpg);
+            background-size: cover;
+        }
+
+        .First {
+            /* border: 2px solid red; */
+            display: inline-block;
+            width: 25%;
+            position: absolute;
+            top: 1px;
+            left: 10px;
+        }
+
+        .Second {
+            /* border: 2px solid red; */
+            display: block;
+            width: 42%;
+            margin: 13px auto;
+        }
+
+        .Third {
+            /* border: 0px solid red; */
+            display: inline-block;
+            position: absolute;
+            right: 12px;
+            width: 17%;
+            
+            top: 15px;
+            cursor: pointer;
+        }
+
+        .First img {
+            display: block;
+            width: 40%;
+            filter: invert(100%);
+        }
+
+        .First div {
+            line-height: 19px;
+            font-size: 26px;
+            position: absolute;
+            top: 99px;
+            background-color: black;
+            color: white;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            padding: 20px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(51, 48, 48);
+        }
+
+        .btn {
+            background-color: black;
+            border: 0px solid red;
+            border-radius: 20px;
+            color: white;
+            padding: 7px 29px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(51, 49, 49);
+        }
+
+        .container {
+            border: 2px solid rgb(24, 23, 23);
+            border-radius: 20px;
+            background-color: #0c2114;
+            color: white;
+            position: absolute;
+            text-align: center;
+
+            width: 36%;
+            top: 25%;
+            left: 40px;
+        }
+
+        .choose input,
+        select {
+            border: 2px solid black;
+            border-radius: 12px;
+            text-align: center;
+            display: block;
+            width: 70%;
+            height: 25px;
+            margin: 12px auto;
+
+        }
+
+        .choo input {
+            border: 2px solid black;
+            color: black;
+            border-radius: 14px;
+            text-align: center;
+            display: inline-block;
+            width: 33%;
+            height: 28px;
+            margin: 14px auto;
+        }
+
+        .btn1 {
+            border: 2px solid rgb(238, 236, 236);
+            background-color: rgb(5, 5, 5);
+            border-radius: 12px;
+            color: rgb(226, 226, 226);
+            cursor: pointer;
+            text-align: center;
+            display: block;
+            width: 70%;
+            height: 25px;
+            margin: 12px auto;
+        }
+
+        .btn1:hover {
+            background-color: rgb(184, 179, 179);
+        }
+
+        .off {
+            width: 43%;
+            border: 0px;
+            border-radius: 80px 11px 80px;
+            position: absolute;
+            top: 30%;
+            right: 1%;
+            font-size: 31px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="First">
+            <img src="bus.png">
+            <div>Jaimin Travels</div>
+        </div>
+
+        <div class="Second">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Plans</a></li>
+                <li><a href="#">Booking History</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+
+        <div class="Third">
+            <button class="btn">Email Us</button>
+            <button class="btn">Call Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>One Of The Best Bus Booking Service</h3>
+        <form>
+            <div class="choose">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+
+            <div class="choose">
+                <input type="number" placeholder="Contect No">
+            </div>
+            Select Gender
+            <div class="choose">
+                <select>
+
+                    <option value="#">Male</option>
+                    <option value="#">Female</option>
+                    <option value="#">Other</option>
+                </select>
+            </div>
+
+            Choose your Journey
+            <div class="choo">
+                <input type="text" placeholder="FROM"> -
+                <input type="text" placeholder="TO">
+            </div>
+            Select Seat
+            <div class="choose">
+                <input type="number" placeholder="Seat">
+            </div>
+            <div class="choose">
+                <input type="date" placeholder="Date">
+            </div>
+            <div class="choose">
+                <input type="time" placeholder="Time">
+            </div>
+            <button class="btn1">
+                BOOK
+            </button>
+        </form>
+    </div>
+    <div class="off">
+        <p> Booking is Open </p>
+        <p>10% OFF Till 25th August</p>
+    </div>
+
+</body>
+
+</html>
